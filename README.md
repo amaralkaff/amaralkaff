@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently Looking for a job
 
-- 👨🏻‍💻 I study front-end developer.
+- 👨🏻‍💻 I study full-stack developer.
 
 - 📫 Reach me on discord **⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝#9031**
 
