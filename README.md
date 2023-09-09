@@ -2,7 +2,8 @@
 <h3 align="center">A web developer - bypass AC</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=amaralkaff&label=Profile%20views&color=0e75b6&style=flat" alt="amaralkaff" /> </p>
-![image]https://www.codewars.com/users/amangly/badges/large
+
+![image](https://www.codewars.com/users/amangly/badges/small)
 
 - 🔭 I’m currently Looking for a job
 
