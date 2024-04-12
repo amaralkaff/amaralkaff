@@ -5,6 +5,8 @@
 
 ![image](https://www.codewars.com/users/amangly/badges/small)
 
+![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true&theme=radical)
+
 - 🔭 I’m currently Learning C++
 
 - 👨🏻‍💻 I study full-stack developer.
