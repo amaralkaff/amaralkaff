@@ -5,7 +5,7 @@
 
 ![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&include_all_commits=true_icons=true&theme=transparent) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=amaralkaff\&layout=compact&theme=transparent)
 
-- 🔭 I’m currently 
+- 🔭 I am currently looking for a job  
 
 - 👨🏻‍💻 I study full-stack developer.
 
