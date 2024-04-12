@@ -5,6 +5,8 @@
 
 ![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true&theme=radical)
 
+[![AmangLy's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/amaralkaff/github-readme-stats)
+
 - 🔭 I’m currently Learning C++
 
 - 👨🏻‍💻 I study full-stack developer.
