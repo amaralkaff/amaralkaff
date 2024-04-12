@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=amaralkaff&label=Profile%20views&color=0e75b6&style=flat" alt="amaralkaff" /> </p>
 
-![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true&theme=radical) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=amaralkaff&hide_progress=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=amaralkaff&show_icons=true&theme=transparent) ![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true&theme=transparent)
 
 - 🔭 I’m currently Learning C++
 
