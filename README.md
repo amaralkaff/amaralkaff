@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=amaralkaff&label=Profile%20views&color=0e75b6&style=flat" alt="amaralkaff" /> </p>
 
-![image](https://www.codewars.com/users/amangly/badges/small)
-
 ![AmangLy's GitHub stats](https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true&theme=radical)
 
 - 🔭 I’m currently Learning C++
