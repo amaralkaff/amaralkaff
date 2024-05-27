@@ -7,8 +7,7 @@ My name is Amar Alkaff. I am a developer from Indonesia.
     <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true">
 </picture>
 
-
--   :pencil2: JavaScript / TypeScript / Python / HTML / CSS
+-   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
 -   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Git](https://git-scm.com/)
 -   :seedling: Exploring projects in web development and machine learning
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
@@ -25,26 +24,25 @@ My name is Amar Alkaff. I am a developer from Indonesia.
   <tr>
     <td align="center">
       <a href="https://github.com/sammyloaded">
-        <img src="https://avatars2.githubusercontent.com/u/73201409" width="100px;" alt="sammyloaded"/>
+        <img src="https://avatars2.githubusercontent.com/u/73201409" width="100px;" alt="sammyloaded" style="border-radius: 100%;"/>
       </a>
       <br />
       <a href="https://github.com/sammyloaded">sammyloaded</a>
     </td>
     <td align="center">
       <a href="https://github.com/AisyahAuliaAngelinee">
-        <img src="https://avatars2.githubusercontent.com/u/127939867" width="100px;" alt="AisyahAuliaAngelinee"/>
+        <img src="https://avatars2.githubusercontent.com/u/127939867" width="100px;" alt="AisyahAuliaAngelinee" style="border-radius: 100%;"/>
       </a>
       <br />
       <a href="https://github.com/AisyahAuliaAngelinee">AisyahAuliaAngelinee</a>
     </td>
     <td align="center">
       <a href="https://github.com/rayenking">
-        <img src="https://avatars2.githubusercontent.com/u/122691366" width="100px;" alt="rayenking"/>
+        <img src="https://avatars2.githubusercontent.com/u/122691366" width="100px;" alt="rayenking" style="border-radius: 100%;"/>
       </a>
       <br />
       <a href="https://github.com/rayenking">rayenking</a>
     </td>
-    
   </tr>
 </table>
 <!--END_SECTION:top-followers-->
@@ -53,4 +51,4 @@ My name is Amar Alkaff. I am a developer from Indonesia.
 
 ## Coding Time in the Last Month by Language
 
-![Coding Time by Language](https://raw.githubusercontent.com/amaralkaff/Coding-time-by-language/main/Coding-time-by-language.svg)
+<img src="https://raw.githubusercontent.com/amaralkaff/your-repo-name/main/path-to-file/coding_time_by_language.svg" alt="Coding Time by Language" style="border-radius: 15px;"/>
