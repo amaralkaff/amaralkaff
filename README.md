@@ -16,7 +16,7 @@
 ## 🧑🏻‍💻 About Me
 
 -   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
--   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Three.js](https://threejs.org/) / [Laravel](https://laravel.com/) / [Livewire](https://laravel-livewire.com/)
+-   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Three.js](https://threejs.org/)
 -   :seedling: Exploring projects in web development
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
 
