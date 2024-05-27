@@ -1,3 +1,1 @@
-<p align="center">
-    <img src="https://awesome-github-stats.azurewebsites.net/user-stats/amaralkaff?cardType=github&theme=dark&preferLogin=true&Background=0D1117&Border=CCCCCC" alt="My Awesome Stats">
-</p>
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
