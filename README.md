@@ -1,20 +1,15 @@
-My name is Amar Alkaff. I am a developer from Indonesia.
-
----
+<img src='https://d.tw93.fun/images/hi.gif' alt='Hi' width="20"/> Hii, My name is Amar Alkaff. I am a Fullstack Engineer from Indonesia.
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=amaralkaff&theme=dark&show_icons=true">
-    <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=amaralkaff&theme=dark">
+    <img align="right" width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=amaralkaff&theme=default">
 </picture>
 
 -   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
 -   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Three.js](https://threejs.org/) / [Laravel](https://laravel.com/) / [Livewire](https://laravel-livewire.com/)
 -   :seedling: Exploring projects in web development
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
--   :star: [Projects starred by me](https://github.com/amaralkaff?tab=stars)
 
----
----
 
 ### :sparkles: My followers
 
