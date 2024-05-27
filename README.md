@@ -11,7 +11,7 @@ My name is Amar Alkaff. I am a developer from Indonesia.
 -   :pencil2: JavaScript / TypeScript / Python / HTML / CSS
 -   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Git](https://git-scm.com/)
 -   :seedling: Exploring projects in web development and machine learning
--   :thought_balloon: Ask me anything at [Discussions](https://github.com/amaralkaff/amaralkaff/discussions/new)!
+-   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
 -   :star: [Projects starred by me](https://github.com/amaralkaff?tab=stars)
 
 ---
