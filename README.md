@@ -7,7 +7,7 @@ My name is Amar Alkaff. I am a developer from Indonesia.
     <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true">
 </picture>
 
--   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
+-   :pencil2: JavaScript / TypeScript / Python / HTML / CSS
 -   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Git](https://git-scm.com/)
 -   :seedling: Exploring projects in web development and machine learning
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
@@ -51,4 +51,4 @@ My name is Amar Alkaff. I am a developer from Indonesia.
 
 ## Coding Time in the Last Month by Language
 
-<img src="https://raw.githubusercontent.com/amaralkaff/your-repo-name/main/path-to-file/coding_time_by_language.svg" alt="Coding Time by Language" style="border-radius: 15px;"/>
+<img src="https://raw.githubusercontent.com/amaralkaff/Coding-time-by-language/main/Coding-time-by-language.svg" style="width: 50%;" alt="Coding Time by Language"/>
