@@ -8,7 +8,7 @@ My name is Amar Alkaff. I am a developer from Indonesia.
 </picture>
 
 -   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
--   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Express.js](https://expressjs.com/) /         [Three.js](https://threejs.org/) / [Git](https://git-scm.com/) / [Laravel](https://laravel.com/) / [Livewire](https://laravel-livewire.com/)
+-   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Three.js](https://threejs.org/) / [Laravel](https://laravel.com/) / [Livewire](https://laravel-livewire.com/)
 -   :seedling: Exploring projects in web development
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
 -   :star: [Projects starred by me](https://github.com/amaralkaff?tab=stars)
