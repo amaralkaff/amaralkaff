@@ -7,9 +7,9 @@ My name is Amar Alkaff. I am a developer from Indonesia.
     <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true">
 </picture>
 
--   :pencil2: JavaScript / TypeScript / Python / HTML / CSS
--   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Git](https://git-scm.com/)
--   :seedling: Exploring projects in web development and machine learning
+-   :pencil2: JavaScript / TypeScript / Python / HTML / CSS / PHP
+-   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Express.js](https://expressjs.com/) /         [Three.js](https://threejs.org/) / [Git](https://git-scm.com/) / [Laravel](https://laravel.com/) / [Livewire](https://laravel-livewire.com/)
+-   :seedling: Exploring projects in web development
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
 -   :star: [Projects starred by me](https://github.com/amaralkaff?tab=stars)
 
