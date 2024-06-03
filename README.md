@@ -52,13 +52,6 @@
 </table>
 <!--END_SECTION:top-followers-->
 
-
-## 📊 Coding Time in the Last Month by Language
-
-<img src="https://raw.githubusercontent.com/amaralkaff/Coding-time-by-language/main/Coding-time-by-language.svg" style="width: 50%; border-radius: 15px;" alt="Coding Time by Language"/>
-
----
-
 ## 🔧 My Projects
 
 Here are some of the projects I have worked on:
