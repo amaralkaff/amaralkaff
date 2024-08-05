@@ -15,7 +15,7 @@
 
 ## 🧑🏻‍💻 About Me
 
--   :pencil2: JavaScript / TypeScript / HTML / CSS / PHP
+-   :pencil2: JavaScript / TypeScript / HTML / CSS
 -   :package: [Next.js](https://nextjs.org/) / [React](https://reactjs.org/) / [Node.js](https://nodejs.org/) / [Three.js](https://threejs.org/)
 -   :seedling: Exploring projects in web development
 -   :thought_balloon: Ask me anything at [Discussions](https://www.amangly.fun/login)!
