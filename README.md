@@ -7,4 +7,7 @@
         <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=amaralkaff&theme=dark&show_icons=true">
         <img width="45%" src="https://github-readme-stats.vercel.app/api?username=amaralkaff&show_icons=true">
     </picture>
+    <picture>
+       <img src='https://raw.githubusercontent.com/amaralkaff/amaralkaff/main/nice.gif' alt='Nice' width="200" style="border-radius: 50px;"/>
+    </picture>
 </div>
