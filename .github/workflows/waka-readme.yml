@@ -1,22 +1,19 @@
 name: Waka Readme
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Runs at 00:00 UTC everyday
-  workflow_dispatch: # Allows manual workflow trigger
-  
+    # Runs every 2 hours
+    - cron: "0 */2 * * *"  # Fixed cron syntax: needs 5 fields
+
 jobs:
   update-readme:
-    name: WakaTime Readme Stats
+    name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPOSITORY: amaralkaff/amaralkaff # your GitHub username and repository
-          SHOW_TITLE: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Don't forget this is required
+          TIME_RANGE: all_time
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
-          TIME_RANGE: last_7_days
-          SHOW_TIME: true
-          SHOW_MASKED_TIME: true
