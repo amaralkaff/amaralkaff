@@ -15,5 +15,6 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Don't forget this is required
-          TIME_RANGE: all_time
+          TIME_RANGE: year
+          START_YEAR: 2024
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
