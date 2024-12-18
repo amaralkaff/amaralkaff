@@ -21,10 +21,10 @@ jobs:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
-          SECTION_NAME: "waka"  # Must contain only alphanumeric characters
-          BLOCKS: ⚪⚫🔵🔴🟣🟡  # More distinctive blocks
-          TIME_RANGE: "last_7_days"  # Valid options: last_7_days, last_30_days, last_6_months, last_year
-          LANG_COUNT: 10  # Number of languages to show
+          SECTION_NAME: "waka"
+          BLOCKS: 🌑🌒🌓🌔🌕🌝  # Moon phases for a space theme
+          TIME_RANGE: "last_7_days"
+          LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: false
