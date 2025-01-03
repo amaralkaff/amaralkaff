@@ -22,7 +22,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
           SECTION_NAME: "waka"
-          BLOCKS: 🌑🌒🌓🌔🌕🌝  # Moon phases for a space theme
+          BLOCKS: "....."  # Using dots for blocks
           TIME_RANGE: "last_7_days"
           LANG_COUNT: 10
           SHOW_TIME: true
