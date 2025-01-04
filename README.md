@@ -3,15 +3,15 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 27 December 2024 - To: 03 January 2025
+From: 28 December 2024 - To: 04 January 2025
 
-Total Time: 30 hrs 53 mins
+Total Time: 37 hrs 24 mins
 
-Dart          14 hrs          .........................   44.45 %
-Python        11 hrs 27 mins  .........................   36.34 %
-YAML          1 hr 53 mins    .........................   05.97 %
-Markdown      52 mins         .........................   02.77 %
-Other         38 mins         .........................   02.02 %
+Dart          17 hrs 43 mins  .........................   46.54 %
+Python        13 hrs 50 mins  .........................   36.34 %
+YAML          1 hr 52 mins    .........................   04.93 %
+Markdown      1 hr 13 mins    .........................   03.23 %
+Other         40 mins         .........................   01.78 %
 ```
 
 <!--END_SECTION:waka-->
