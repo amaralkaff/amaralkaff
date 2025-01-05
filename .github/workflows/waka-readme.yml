@@ -25,8 +25,8 @@ jobs:
           TIME_RANGE: "last_7_days"
           LANG_COUNT: 10
           SHOW_TIME: true
-          SHOW_TOTAL: true
+          SHOW_TOTAL: false
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
-          SHOW_DATE_RANGE: false  # Added this to hide the date range
+          SHOW_DATE_RANGE: false
           COMMIT_MESSAGE: "📊 Updated coding activity graph"
