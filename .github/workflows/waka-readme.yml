@@ -28,4 +28,5 @@ jobs:
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
+          SHOW_DATE_RANGE: false  # Added this to hide the date range
           COMMIT_MESSAGE: "📊 Updated coding activity graph"
