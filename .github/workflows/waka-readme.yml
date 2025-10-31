@@ -1,8 +1,8 @@
 name: Coding Time Statistics
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"  # Runs every 5 minutes
+    - cron: "*/5 * * * *"
   push:
     branches: [ main, master ]
 jobs:
@@ -23,10 +23,15 @@ jobs:
           SECTION_NAME: "waka"
           BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
           TIME_RANGE: "all_time"
-          LANG_COUNT: 5  # Changed to 5 instead of 10 to only show 5 languages
+          LANG_COUNT: 5
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
           SHOW_DATE_RANGE: true
           COMMIT_MESSAGE: "📊 Updated coding activity graph"
+      
+      - name: "⭐ Update GitHub Stats"
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
