@@ -2,17 +2,13 @@ name: Coding Time Statistics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
-  push:
-    branches: [ main, master ]
+    - cron: "0 */6 * * *"  # Every 6 hours (lebih efisien dari 5 menit)
 jobs:
   update-readme:
-    name: "📊 Update Coding Statistics"
+    name: "📊 Update Statistics"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       
       - name: "⚡ Generate WakaTime Stats"
         uses: athul/waka-readme@master
@@ -29,9 +25,12 @@ jobs:
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
           SHOW_DATE_RANGE: true
-          COMMIT_MESSAGE: "📊 Updated coding activity graph"
+          COMMIT_MESSAGE: "📊 Updated coding activity"
       
-      - name: "⭐ Update GitHub Stats"
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: "⭐ Update Stars Count"
+        run: |
+          STARS=$(curl -s -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+            "https://api.github.com/users/amaralkaff/repos?per_page=100" | \
+            jq '[.[] | .stargazers_count] | add // 0')
+          sed -i "s/<!--STARS_COUNT-->[0-9]*<!--\/STARS_COUNT-->/<!--STARS_COUNT-->$STARS<!--\/STARS_COUNT-->/g" README.md
+          
