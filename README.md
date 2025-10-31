@@ -1,5 +1,3 @@
-
-![](https://img.shields.io/github/stars/amaralkaff?style=social)
 <!--START_SECTION:waka-->
 ```txt
 
