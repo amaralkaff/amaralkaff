@@ -1,3 +1,5 @@
+⭐ Total Stars: <!--STARS_COUNT-->0<!--/STARS_COUNT-->
+
 <!--START_SECTION:waka-->
 
 ```txt
