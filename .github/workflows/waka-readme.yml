@@ -2,7 +2,8 @@ name: Coding Time Statistics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours (lebih efisien dari 5 menit)
+    - cron: "0 */6 * * *"  # Every 6 hours
+
 jobs:
   update-readme:
     name: "📊 Update Statistics"
@@ -29,8 +30,20 @@ jobs:
       
       - name: "⭐ Update Stars Count"
         run: |
+          # Fetch total stars dari semua repositories
           STARS=$(curl -s -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
             "https://api.github.com/users/amaralkaff/repos?per_page=100" | \
             jq '[.[] | .stargazers_count] | add // 0')
+          
+          # Update di README.md
           sed -i "s/<!--STARS_COUNT-->[0-9]*<!--\/STARS_COUNT-->/<!--STARS_COUNT-->$STARS<!--\/STARS_COUNT-->/g" README.md
           
+          echo "Total Stars: $STARS"
+      
+      - name: "💾 Commit Changes"
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "📊 Updated coding activity & ⭐ stars count"
+          git push
