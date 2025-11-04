@@ -2,6 +2,7 @@
 
 ```txt
 From: 01 September 2023 - To: 03 November 2025
+⭐ **Total Stars:** <!--STARS_COUNT-->0<!--/STARS_COUNT-->
 
 Total Time: 1,474 hrs 5 mins
 
