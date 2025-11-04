@@ -22,8 +22,8 @@ jobs:
           
           echo "Total Stars: $STARS"
           
-          # Update di README.md
-          sed -i "s/<!--STARS_COUNT-->[0-9]*<!--\/STARS_COUNT-->/<!--STARS_COUNT-->$STARS<!--\/STARS_COUNT-->/g" README.md
+          # Update di README.md dengan format multiline
+          sed -i "s/⭐ Stars: [0-9]*/⭐ Stars: $STARS/g" README.md
           
           # Check jika ada perubahan
           if ! git diff --quiet README.md; then
