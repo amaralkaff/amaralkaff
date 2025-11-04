@@ -24,13 +24,6 @@ jobs:
           
           # Update di README.md dengan format multiline
           sed -i "s/⭐ Stars: [0-9]*/⭐ Stars: $STARS/g" README.md
-          
-          # Check jika ada perubahan
-          if ! git diff --quiet README.md; then
-            echo "Stars count updated!"
-          else
-            echo "No changes in stars count"
-          fi
       
       - name: "⚡ Generate WakaTime Stats"
         uses: athul/waka-readme@master
@@ -47,17 +40,3 @@ jobs:
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
           COMMIT_MESSAGE: "📊 Updated coding activity & ⭐ stars count"
-      
-      - name: "💾 Commit Stars Count (if WakaTime didn't change)"
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # Check jika ada perubahan yang belum di-commit
-          if ! git diff --quiet README.md || ! git diff --staged --quiet README.md; then
-            git add README.md
-            git commit -m "⭐ Updated stars count" || echo "No changes to commit"
-            git push || echo "Nothing to push"
-          else
-            echo "No uncommitted changes"
-          fi
