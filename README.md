@@ -1,4 +1,8 @@
-⭐ Total Stars: <!--STARS_COUNT-->28<!--/STARS_COUNT-->
+<!--STARS_COUNT-->
+```txt
+⭐ Stars:
+```
+<!--/STARS_COUNT-->
 
 <!--START_SECTION:waka-->
 
