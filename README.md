@@ -1,5 +1,5 @@
 <!--START_SECTION:waka-->
-<!--STARS_COUNT--><!--/STARS_COUNT-->
+
 ```txt
 From: 01 September 2023 - To: 03 November 2025
 
