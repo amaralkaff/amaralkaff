@@ -1,6 +1,6 @@
 <!--STARS_COUNT-->
 ```txt
-⭐ Stars: 28
+Stars: 28
 ```
 <!--/STARS_COUNT-->
 
