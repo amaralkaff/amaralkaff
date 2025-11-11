@@ -7,7 +7,7 @@ Stars: 28
 <!--START_SECTION:waka-->
 
 ```txt
-From: 01 September 2023 - To: 09 November 2025
+From: 01 September 2023 - To: 10 November 2025
 
 Total Time: 1,475 hrs 3 mins
 
