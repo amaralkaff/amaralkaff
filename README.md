@@ -1,11 +1,3 @@
-<!--STARS_COUNT-->
-```txt
-Stars: 28
-```
-<!--/STARS_COUNT-->
-
-<!--START_SECTION:waka-->
-
 ```txt
 From: 01 September 2023 - To: 01 December 2025
 
