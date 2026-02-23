@@ -32,14 +32,20 @@ jobs:
               page++;
             }
             let readme = fs.readFileSync('README.md', 'utf8');
-            const startTag = '<!--START_SECTION:stars-->';
-            const endTag = '<!--END_SECTION:stars-->';
-            const startIdx = readme.indexOf(startTag);
-            const endIdx = readme.indexOf(endTag);
-            if (startIdx !== -1 && endIdx !== -1) {
-              readme = readme.substring(0, startIdx + startTag.length) + 'Total Stars: ' + total + readme.substring(endIdx);
-              fs.writeFileSync('README.md', readme);
+            // Remove existing Total Stars line if present
+            readme = readme.replace(/\nTotal Stars: \d+\n```/, '\n```');
+            // Insert Total Stars before the closing ``` of the waka block
+            const wakaEnd = readme.indexOf('\n```\n\n<!--END_SECTION:waka-->');
+            if (wakaEnd === -1) {
+              // Try alternate pattern
+              const alt = readme.indexOf('\n```\n<!--END_SECTION:waka-->');
+              if (alt !== -1) {
+                readme = readme.substring(0, alt) + '\nTotal Stars: ' + total + readme.substring(alt);
+              }
+            } else {
+              readme = readme.substring(0, wakaEnd) + '\nTotal Stars: ' + total + readme.substring(wakaEnd);
             }
+            fs.writeFileSync('README.md', readme);
 
       - name: "📝 Commit Changes"
         run: |
