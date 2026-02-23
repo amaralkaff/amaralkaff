@@ -20,12 +20,15 @@ jobs:
             let total = 0;
             let page = 1;
             while (true) {
-              const res = await github.rest.activity.listReposStarredByAuthenticatedUser({
+              const res = await github.rest.repos.listForAuthenticatedUser({
                 per_page: 100,
-                page: page
+                page: page,
+                affiliation: 'owner'
               });
               if (res.data.length === 0) break;
-              total += res.data.length;
+              for (const repo of res.data) {
+                total += repo.stargazers_count;
+              }
               page++;
             }
             let readme = fs.readFileSync('README.md', 'utf8');
