@@ -1,0 +1,75 @@
+name: Update Star List
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 0 * * *"  # Every day at 00:30 UTC
+
+jobs:
+  update-stars:
+    name: "⭐ Update Stars"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "⭐ Generate Star List"
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const fs = require('fs');
+            
+            let stars = [];
+            let page = 1;
+            while (true) {
+              const res = await github.rest.activity.listReposStarredByAuthenticatedUser({
+                per_page: 100,
+                page: page,
+                sort: 'created',
+                direction: 'desc'
+              });
+              if (res.data.length === 0) break;
+              stars = stars.concat(res.data);
+              page++;
+            }
+            
+            // Group by language
+            const grouped = {};
+            for (const repo of stars) {
+              const lang = repo.language || 'Other';
+              if (!grouped[lang]) grouped[lang] = [];
+              grouped[lang].push(repo);
+            }
+            
+            // Sort languages by count
+            const sorted = Object.entries(grouped).sort((a, b) => b[1].length - a[1].length);
+            
+            let section = '```txt\n';
+            section += `⭐ ${stars.length} Starred Repositories\n\n`;
+            
+            for (const [lang, repos] of sorted) {
+              section += `${lang} (${repos.length})\n`;
+              for (const repo of repos) {
+                const desc = repo.description ? ` - ${repo.description.substring(0, 60)}` : '';
+                section += `  ├─ ${repo.full_name}${desc}\n`;
+              }
+              section += '\n';
+            }
+            
+            section += '```';
+            
+            let readme = fs.readFileSync('README.md', 'utf8');
+            const startTag = '<!--START_SECTION:stars-->';
+            const endTag = '<!--END_SECTION:stars-->';
+            const startIdx = readme.indexOf(startTag);
+            const endIdx = readme.indexOf(endTag);
+            
+            if (startIdx !== -1 && endIdx !== -1) {
+              readme = readme.substring(0, startIdx + startTag.length) + '\n' + section + '\n' + readme.substring(endIdx);
+              fs.writeFileSync('README.md', readme);
+            }
+
+      - name: "📝 Commit Changes"
+        run: |
+          git config user.name "amaralkaff"
+          git config user.email "tpamangly@gmail.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "⭐ Updated star list" && git push)

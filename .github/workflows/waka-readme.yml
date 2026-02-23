@@ -2,7 +2,7 @@ name: Coding Time Statistics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours
+    - cron: "0 0 * * *"  # Every day at midnight UTC
 
 jobs:
   update-readme:
