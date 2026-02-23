@@ -32,13 +32,11 @@ jobs:
               page++;
             }
             let readme = fs.readFileSync('README.md', 'utf8');
-            // Remove existing Total Stars line if present
-            readme = readme.replace(/\nTotal Stars: \d+\n```/, '\n```');
-            // Insert Total Stars with gap before closing ```
+            readme = readme.replace(/\nTotal Stars: \d+.*\n```/, '\n```');
             const lines = readme.split('\n');
             for (let i = 0; i < lines.length; i++) {
               if (lines[i].trim() === '```' && i > 3) {
-                lines.splice(i, 0, '', 'Total Stars: ' + total);
+                lines.splice(i, 0, '', 'Total Stars: ' + total + ' \u2605');
                 break;
               }
             }
