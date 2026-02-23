@@ -6,12 +6,12 @@ on:
 
 jobs:
   update-stars:
-    name: "⭐ Update Stars"
+    name: Update Stars
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: "⭐ Update Star Count"
+      - name: Update Star Count
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GH_TOKEN }}
@@ -34,21 +34,18 @@ jobs:
             let readme = fs.readFileSync('README.md', 'utf8');
             // Remove existing Total Stars line if present
             readme = readme.replace(/\nTotal Stars: \d+\n```/, '\n```');
-            // Insert Total Stars before the closing ``` of the waka block
-            const wakaEnd = readme.indexOf('\n```\n\n<!--END_SECTION:waka-->');
-            if (wakaEnd === -1) {
-              // Try alternate pattern
-              const alt = readme.indexOf('\n```\n<!--END_SECTION:waka-->');
-              if (alt !== -1) {
-                readme = readme.substring(0, alt) + '\nTotal Stars: ' + total + readme.substring(alt);
+            // Insert Total Stars with gap before closing ```
+            const lines = readme.split('\n');
+            for (let i = 0; i < lines.length; i++) {
+              if (lines[i].trim() === '```' && i > 3) {
+                lines.splice(i, 0, '', 'Total Stars: ' + total);
+                break;
               }
-            } else {
-              readme = readme.substring(0, wakaEnd) + '\nTotal Stars: ' + total + readme.substring(wakaEnd);
             }
-            fs.writeFileSync('README.md', readme);
+            fs.writeFileSync('README.md', lines.join('\n'));
 
-      - name: "📝 Commit Changes"
+      - name: Commit Changes
         run: |
           git config user.name "amaralkaff"
           git config user.email "tpamangly@gmail.com"
-          git diff --quiet README.md || (git add README.md && git commit -m "⭐ Updated star count" && git push)
+          git diff --quiet README.md || (git add README.md && git commit -m "Updated star count" && git push)

@@ -2,18 +2,18 @@ name: Coding Time Statistics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # Every day at midnight UTC
+    - cron: "0 0 * * *"
 
 jobs:
   update-readme:
-    name: "📊 Update Statistics"
+    name: Update Statistics
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       
-      - name: "⚡ Generate WakaTime Stats"
+      - name: Generate WakaTime Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -27,4 +27,4 @@ jobs:
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: false
           STOP_AT_OTHER: true
-          COMMIT_MESSAGE: "📊 Updated coding activity"
+          COMMIT_MESSAGE: "Updated coding activity"
