@@ -1,0 +1,33 @@
+name: GitHub Coding Statistics
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-readme:
+    name: Update Statistics
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          INCLUDE_FORKS: "false"
+          BYTES_PER_HOUR: "40000"
+          LANG_COUNT: "5"
+        run: node .github/scripts/update-readme.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "amaralkaff"
+          git config user.email "tpamangly@gmail.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "Updated GitHub coding activity" && git push)
