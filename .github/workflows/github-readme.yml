@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           INCLUDE_FORKS: "false"
           BYTES_PER_HOUR: "40000"
-          LANG_COUNT: "5"
+          LANG_COUNT: "6"
         run: node .github/scripts/update-readme.js
 
       - name: Commit changes
