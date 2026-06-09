@@ -1,7 +1,7 @@
 <!--START_SECTION:github-->
 
 ```txt
-From: 04 April 2023 - To: 08 June 2026
+From: 04 April 2023 - To: 09 June 2026
 
 Total Time: 1,595 hrs 32 mins
 
